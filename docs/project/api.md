@@ -9,13 +9,17 @@
     -   [updateRating][5]
     -   [comment][6]
     -   [changeRating][7]
-    -   [computedClasses][8]
--   [maybeHandleError][9]
--   [fetchComments][10]
--   [Index][11]
-    -   [comments][12]
-    -   [hasComments][13]
-    -   [fetch][14]
+        -   [Parameters][8]
+    -   [computedClasses][9]
+-   [maybeHandleError][10]
+    -   [Parameters][11]
+-   [fetchComments][12]
+    -   [Parameters][13]
+-   [Index][14]
+    -   [comments][15]
+    -   [hasComments][16]
+    -   [fetch][17]
+        -   [Parameters][18]
 
 ## ActionBar
 
@@ -30,11 +34,11 @@ unless you know what are you doing!
 
 Typed alias to Vuex `fetchComments` action.
 
-Type: function (): [Promise][15]&lt;[Array][16]&lt;CommentType>>
+Type: function (): [Promise][19]&lt;[Array][20]&lt;CommentType>>
 
 ### render
 
--   **See: [https://vuejs.org/v2/guide/render-function.html][17]**
+-   **See: [https://vuejs.org/v2/guide/render-function.html][21]**
 
 Render function. It is an equavalent of `<template>` tag.
 
@@ -63,10 +67,10 @@ Type: CommentType
 Changes comment's rating.
 Can be used to increase or decrease comment's rating.
 
-**Parameters**
+#### Parameters
 
--   `commentId` **[number][18]** Comment's identifier to change rating.
--   `delta` **[number][18]** Delta value to change rating value.
+-   `commentId` **[number][22]** Comment's identifier to change rating.
+-   `delta` **[number][22]** Delta value to change rating value.
 
 ### computedClasses
 
@@ -79,7 +83,7 @@ Returns **any** Pairs of class names and boolean values if they should be applie
 
 Throws error when there is one.
 
-**Parameters**
+### Parameters
 
 -   `error` **$AxiosError&lt;T>?** Error instance to be thrown.
 
@@ -89,14 +93,14 @@ Returns **void**
 
 Fetches comments from the remote API.
 
-**Parameters**
+### Parameters
 
 -   `$axios` **Axios** Slightly modified `Axios` instance from nuxt-axios module.
 
 
 -   Throws **$AxiosError** If there is one.
 
-Returns **[Promise][15]&lt;[Array][16]&lt;RawCommentType>>** Parsed response data.
+Returns **[Promise][19]&lt;[Array][20]&lt;RawCommentType>>** Parsed response data.
 
 ## Index
 
@@ -109,27 +113,27 @@ Mounted as `/` by default.
 
 List of predownloaded comments, bound from Vuex.
 
-Type: [Array][16]&lt;CommentType>
+Type: [Array][20]&lt;CommentType>
 
 ### hasComments
 
 Returns either we have any comments or not.
 
-Type: [boolean][19]
+Type: [boolean][23]
 
 ### fetch
 
--   **See: [https://nuxtjs.org/api/pages-fetch][20]**
+-   **See: [https://nuxtjs.org/api/pages-fetch][24]**
 
 Fetches comments from external API from the server side.
 This method should preload Vuex store.
 
-**Parameters**
+#### Parameters
 
 -   `context` **any** Nuxt `context` instance.
     -   `context.store`  Current Vuex store.
 
-Returns **[Promise][15]&lt;[Array][16]&lt;CommentType>>** List of downloaded comments.
+Returns **[Promise][19]&lt;[Array][20]&lt;CommentType>>** List of downloaded comments.
 
 [1]: #actionbar
 
@@ -145,28 +149,36 @@ Returns **[Promise][15]&lt;[Array][16]&lt;CommentType>>** List of downloaded com
 
 [7]: #changerating
 
-[8]: #computedclasses
+[8]: #parameters
 
-[9]: #maybehandleerror
+[9]: #computedclasses
 
-[10]: #fetchcomments-1
+[10]: #maybehandleerror
 
-[11]: #index
+[11]: #parameters-1
 
-[12]: #comments
+[12]: #fetchcomments-1
 
-[13]: #hascomments
+[13]: #parameters-2
 
-[14]: #fetch
+[14]: #index
 
-[15]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[15]: #comments
 
-[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[16]: #hascomments
 
-[17]: https://vuejs.org/v2/guide/render-function.html
+[17]: #fetch
 
-[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[18]: #parameters-3
 
-[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
-[20]: https://nuxtjs.org/api/pages-fetch
+[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[21]: https://vuejs.org/v2/guide/render-function.html
+
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[24]: https://nuxtjs.org/api/pages-fetch

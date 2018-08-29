@@ -21,4 +21,5 @@ This file is required for `gitbook.io` to build a beautiful table of contents.
 
 Project specific files. `api.md` is an example file. It should be removed.
 
+- [Commit Format](project/commit-format.md)
 - [API](project/api.md)

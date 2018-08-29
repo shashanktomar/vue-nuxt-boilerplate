@@ -33,3 +33,11 @@ When developing locally, we use:
 Full documentation is available here: [`docs/`](docs).
 
 ## Other things added on top of boilerplate
+
+- add commit-lint step to ci
+- ziet now deployment
+- circleci build pipeline
+- ~~try semantic release library~~
+- add component caching for list views
+- investigate api caching middleware
+- PWA

@@ -3,7 +3,8 @@
 
 version: "3.6"
 services:
-  vue:
+  app:
+    container_name: vue-app
     build:
       context: .
       dockerfile: ./docker/vue/Dockerfile

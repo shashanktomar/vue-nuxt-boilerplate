@@ -53,30 +53,6 @@ if [ "$BUILD_IMAGE" -eq 1 ]; then
   docker build -t "$TAG" -f 'docker/testcafe/Dockerfile' .
 fi
 
-test_url_ready () {
-  # A simple way to find that resource is ready: we fetch headers via `curl`.
-  sh './docker/testcafe/wait-for-commands.sh' \
-    -t 10 \
-    -s 0 \
-    -c "curl -I $BASE_TEST_URL"
-}
-
-# Waiting for URL to become reachable, docker containers generally take some
-# time to start:
-TRIES=1
-until test_url_ready; do
-  >&2 echo "$BASE_TEST_URL is unavailable - sleeping"
-
-  if [ "$MAX_WAIT_TRIES" -eq "$TRIES" ]; then
-    >&2 echo "$BASE_TEST_URL is unavailable - timeout after $TRIES tries"
-    exit 1
-  fi
-
-  : $(( TRIES=TRIES+1 ))
-done
-
->&2 echo "$BASE_TEST_URL is up - continuing..."
-
 # Running TestCafe fixtures:
 docker run \
   --network "$NETWORK" \

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/.eslintrc.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/.eslintrc.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/ActionBar.vue">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/ActionBar.vue" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/AppLogo.vue">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/AppLogo.vue" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/Comment.vue">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/components/Comment.vue" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/layouts/default.vue">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/layouts/default.vue" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/logics/api/comments.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/logics/api/comments.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/plugins/performance.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/plugins/performance.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/router.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/router.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/actions.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/actions.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/getters.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/getters.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/index.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/mutations.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/mutations.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/state.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/state.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/types.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/store/types.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/types/index.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/types/index.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/views/Index.vue">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/client/views/Index.vue" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docker/testcafe/fixtures/.eslintrc.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docker/testcafe/fixtures/.eslintrc.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docker/testcafe/fixtures/index.spec.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docker/testcafe/fixtures/index.spec.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docs/.remarkrc.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/docs/.remarkrc.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/lint-staged.config.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/lint-staged.config.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/nuxt.config.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/nuxt.config.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/package.json">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/package.json" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/stylelint.config.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/stylelint.config.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/.eslintrc.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/.eslintrc.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/components/action-bar.spec.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/components/action-bar.spec.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/components/comment.spec.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/components/comment.spec.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/fixtures/faker.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/fixtures/faker.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/fixtures/vuex.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/fixtures/vuex.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/jest.config.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/jest.config.js" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/views/index.spec.js">
+<testcase time="0" name="/Users/shashanktomar/Documents/projects/learning/vue/wemake-vue-nuxt-boilerpate/tests/views/index.spec.js" />
+</testsuite>
+</testsuites>

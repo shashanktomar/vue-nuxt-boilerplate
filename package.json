@@ -5,7 +5,7 @@
   "author": "Shashank Tomar <shashank004@gmail.com>",
   "private": true,
   "engines": {
-    "node": "10.8",
+    "node": "10.8.0",
     "yarn": "1.9"
   },
   "scripts": {
@@ -17,21 +17,25 @@
     "start": "cross-env NODE_ENV=production nuxt start",
     "generate": "cross-env NODE_ENV=production nuxt generate",
     "test:unit": "cross-env NODE_ENV=test jest --config tests/jest.config.js",
+    "test:unit:ci": "jest --config tests/jest.config.js --ci --reporters jest-junit",
     "test:sec": "nsp check --warn-only",
     "test": "yarn test:unit && yarn test:sec && yarn lint",
     "lint:js": "eslint --ext .js,.jsx,.vue,.json --ignore-path .gitignore .",
+    "lint:js:ci": "eslint --ext .js,.jsx,.vue,.json --ignore-path .gitignore --format junit -o reports/junit/js-lint-results.xml .",
     "lint:css": "stylelint 'client/**/*.{vue,scss,css}'",
     "lint:md": "remark -q -f -r docs/.remarkrc.js .",
     "lint:fix": "eslint --ext .js,.jsx,.vue,.json --ignore-path .gitignore --fix . && stylelint --fix 'client/**/*.{vue,scss,css}' && prettier --list-different --write \"**/*.{js,json,css,scss,vue,md}\"",
     "lint": "yarn lint:js && yarn lint:css && yarn lint:md",
+    "lint:ci": "yarn lint:js:ci && yarn lint:css && yarn lint:md",
     "docs:api": "documentation build client/** -f md -o docs/project/api.md",
     "docs:serve": "yarn docs:build && gitbook serve docs",
     "docs:build": "yarn docs:api && gitbook build docs",
-    "ci": "yarn test && yarn build"
+    "ci:test": "yarn test:unit:ci && yarn test:sec && yarn lint:ci"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "cross-env PRE_COMMIT=true lint-staged && yarn ci",
+      "post-merge": "yarn test",
+      "pre-commit": "cross-env PRE_COMMIT=true lint-staged && yarn test && yarn build",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -110,6 +114,7 @@
     "gitbook-cli": "^2.3.2",
     "husky": "^1.0.0-rc.13",
     "jest": "^23.5.0",
+    "jest-junit": "^5.1.0",
     "lint-staged": "^7.2.2",
     "nsp": "^3.2.1",
     "prettier": "^1.14.2",

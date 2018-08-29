@@ -13,3 +13,5 @@ RUN cd /opt/testcafe && npm install \
 
 # Falling back to the runtime privileages:
 USER user
+
+COPY ./docker/testcafe/fixtures /tests

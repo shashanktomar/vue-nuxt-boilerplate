@@ -41,12 +41,11 @@ WORKDIR /code
 
 
 # Project initialization:
-
 RUN set -ex; \
   if [ "$NODE_ENV" = "production" ]; then \
   yarn install --no-cache --frozen-lockfile --production; \
   yarn build; \
-  elif [ "$NODE_ENV" = "development" ]; then \
+  else \
   yarn install --no-cache --frozen-lockfile; \
   fi;
 

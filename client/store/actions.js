@@ -7,10 +7,7 @@ import type { ActionContext } from 'vuex'
 import type { StateType } from '~/types'
 
 const actions = {
-  async fetchComments ({
-    commit,
-    _state,
-  }: ActionContext<StateType>) {
+  async fetchComments({ commit, _state }: ActionContext<StateType>) {
     const commentsList = await comments.fetchComments(this.$axios)
     commit(mutationTypes.SET_COMMENTS, commentsList)
 

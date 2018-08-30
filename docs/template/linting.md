@@ -13,7 +13,7 @@ Use `yarn lint` to run everything we have.
 [![JavaScript Style Guide][svg]](https://github.com/standard/standard)
 
 We use `eslint` to lint `javascript`. 
-We stick to [`wemake`][wemake] code style.
+We use `prettier` for code style. 
 It is just like `standard` config, but stricter.
 But, we have some additional checks that make our style even more stricter.
 
@@ -31,7 +31,7 @@ test frameworks that we use.
 ## flow
 
 `flow` is an optional strict typing.
-We use [`eslint-plugin-flowtype-errors`](https://www.npmjs.com/package/eslint-plugin-flowtype-errors) 
+We use `prettier/flowtype`
 to run these checks during linting stage.
 
 You can enable `flow` on a per-file basis. So, it very easy to start.
@@ -57,11 +57,6 @@ There are two ways to handle `type` imports:
 We use 3rd party typings for `vue`-related libraries: [`vue-flow-typed`](https://github.com/sobolevn/vue-flow-typed).
 You can install and use each package individually depending on what 
 packages are you using the most. And what types you need.
-
-### eslint-plugin-flowtype
-
-We also lint `flow` type annotations themselves. 
-We are using [`eslint-plugin-flowtype`][eslint-plugin-flowtype].
 
 ## jsdoc
 

@@ -2,16 +2,13 @@
 // See: https://stylelint.io/user-guide/configuration/
 
 module.exports = {
-  'extends': [
-    'stylelint-config-strict-scss',
-    'stylelint-config-css-modules',
-  ],
-  'plugins': [
+  extends: ['stylelint-config-strict-scss', 'stylelint-config-css-modules'],
+  plugins: [
     'stylelint-csstree-validator',
     'stylelint-no-unsupported-browser-features',
   ],
 
-  'rules': {
+  rules: {
     // camelCase works better for css-module names:
     'selector-class-pattern': '^[a-z][a-zA-Z]+$',
     'selector-id-pattern': '^[a-z][a-zA-Z]+$',
@@ -22,8 +19,6 @@ module.exports = {
 
     // custom plugins to work with
     'csstree/validator': true,
-    'plugin/no-unsupported-browser-features': [
-      true, { 'severity': 'warning' },
-    ],
+    'plugin/no-unsupported-browser-features': [true, { severity: 'warning' }],
   },
 }

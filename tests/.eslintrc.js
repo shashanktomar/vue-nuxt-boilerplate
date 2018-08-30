@@ -1,7 +1,7 @@
 module.exports = {
-  'extends': ['plugin:jest/recommended'],
-  'rules': {
-    'jest/consistent-test-it': ['error', { 'fn': 'test' }],
+  extends: ['plugin:jest/recommended'],
+  rules: {
+    'jest/consistent-test-it': ['error', { fn: 'test' }],
     'jest/lowercase-name': 'error',
     'jest/valid-describe': 'error',
     'jest/no-jest-import': 'error',
@@ -12,7 +12,7 @@ module.exports = {
     'jest/no-jasmine-globals': 'error',
 
     // warn users about too large snapshots:
-    'jest/no-large-snapshots': ['warn', { 'maxSize': 50 }],
+    'jest/no-large-snapshots': ['warn', { maxSize: 50 }],
 
     // allows to use long functions inside tests:
     'max-lines-per-function': 'off',

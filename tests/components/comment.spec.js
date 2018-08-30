@@ -14,11 +14,8 @@ describe('unit tests for Comment component', () => {
   let store
 
   beforeEach(() => {
-    comment = commentFactory.build({ 'rating': 0 })
-    store = storeFactory.build(
-      { 'state': { 'comments': [comment] } },
-      { localVue }
-    )
+    comment = commentFactory.build({ rating: 0 })
+    store = storeFactory.build({ state: { comments: [comment] } }, { localVue })
   })
 
   // Uncomment this line to test typing:
@@ -28,7 +25,7 @@ describe('unit tests for Comment component', () => {
     const wrapper = mount(Comment, {
       store,
       localVue,
-      'propsData': { comment },
+      propsData: { comment },
     })
 
     expect(wrapper.isVueInstance()).toBeTruthy()
@@ -40,13 +37,27 @@ describe('unit tests for Comment component', () => {
     const wrapper = mount(Comment, {
       store,
       localVue,
-      'propsData': { comment },
+      propsData: { comment },
     })
 
-    expect(wrapper.find('.body').text().trim()).toEqual(comment.body)
-    expect(wrapper.find('.author').text().trim()).toEqual(comment.email)
-    expect(wrapper.find('.number').text().trim())
-      .toEqual(comment.rating.toString())
+    expect(
+      wrapper
+        .find('.body')
+        .text()
+        .trim()
+    ).toEqual(comment.body)
+    expect(
+      wrapper
+        .find('.author')
+        .text()
+        .trim()
+    ).toEqual(comment.email)
+    expect(
+      wrapper
+        .find('.number')
+        .text()
+        .trim()
+    ).toEqual(comment.rating.toString())
   })
 
   test('should increment rating', () => {
@@ -55,11 +66,11 @@ describe('unit tests for Comment component', () => {
     const wrapper = mount(Comment, {
       store,
       localVue,
-      'propsData': { comment },
+      propsData: { comment },
     })
 
     wrapper.vm.$store.commit(types.UPDATE_RATING, {
-      'commentId': comment.id,
+      commentId: comment.id,
       delta,
     })
     expect(wrapper.vm.$store.state.comments[0].rating).toEqual(newRating)
@@ -74,11 +85,11 @@ describe('unit tests for Comment component', () => {
     const wrapper = mount(Comment, {
       store,
       localVue,
-      'propsData': { comment },
+      propsData: { comment },
     })
 
     wrapper.vm.$store.commit(types.UPDATE_RATING, {
-      'commentId': comment.id,
+      commentId: comment.id,
       delta,
     })
     expect(wrapper.vm.$store.state.comments[0].rating).toEqual(newRating)
@@ -94,18 +105,15 @@ describe('snapshot tests for Comment component', () => {
 
   beforeAll(() => {
     // We need a seed here to be consistent for snapshot testing:
-    comment = commentFactory.build({}, { 'seed': 8874 })
-    store = storeFactory.build(
-      { 'state': { 'comments': [comment] } },
-      { localVue }
-    )
+    comment = commentFactory.build({}, { seed: 8874 })
+    store = storeFactory.build({ state: { comments: [comment] } }, { localVue })
   })
 
   test('should match the snapshot', () => {
     const wrapper = mount(Comment, {
       store,
       localVue,
-      'propsData': { comment },
+      propsData: { comment },
     })
     expect(wrapper.html()).toMatchSnapshot()
   })

@@ -36,18 +36,6 @@ We have struggled with `ssr` for long enough, and we don't want to go back.
 Also, `Nuxt`'s predefined build configuration suits us very well.
 Wide choice of plugins also allows solving problems faster.
 
-## Do you support Prettier?
-
-Nope. And we never will.
-
-We strongly believe that writing good and well-formated 
-code is a developer's responsibility. 
-
-We also have strong linting rules and CI step. 
-So any improperly formatted code won't make its way into the build.
-
-We also do not encourage using `eslint --fix`.
-
 ## Why do you use `now` for a demo project?
 
 This allows us to show how easy it is to deploy a full-featured isomorphic app.

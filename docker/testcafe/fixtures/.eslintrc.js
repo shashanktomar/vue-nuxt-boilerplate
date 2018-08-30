@@ -1,10 +1,8 @@
 module.exports = {
-  'extends': 'plugin:testcafe/recommended',
-  'plugins': [
-    'testcafe',
-  ],
+  extends: 'plugin:testcafe/recommended',
+  plugins: ['testcafe'],
 
-  'rules': {
+  rules: {
     // disable some rules that are not working well with `testcafe`:
     'no-return-await': 'off',
 

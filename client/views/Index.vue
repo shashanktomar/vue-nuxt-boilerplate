@@ -35,7 +35,7 @@ import type { CommentType, StateType } from '~/types'
 
 // @vue/component
 @Component({
-  'components': {
+  components: {
     ActionBar,
     AppLogo,
     Comment,
@@ -67,7 +67,7 @@ export default class Index extends Vue {
    * @param context.store - Current Vuex store.
    * @returns List of downloaded comments.
    */
-  fetch ({ store }: { store: Store<StateType> }): Promise<Array<CommentType>> {
+  fetch({ store }: { store: Store<StateType> }): Promise<Array<CommentType>> {
     // Uncomment the next line to test flow types:
     // console.log(this.comments + store.state.comments.length)
     return store.dispatch('fetchComments')

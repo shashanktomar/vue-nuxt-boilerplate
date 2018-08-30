@@ -2,9 +2,9 @@
 
 import type { StateType } from '~/types'
 
-function createState (): StateType {
+function createState(): StateType {
   return {
-    'comments': null,
+    comments: null,
   }
 }
 

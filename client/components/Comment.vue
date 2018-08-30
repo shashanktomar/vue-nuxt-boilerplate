@@ -45,7 +45,7 @@ export default class Comment extends Vue {
   /**
    * This is a wrapped mutation from the vuex.
    */
-  updateRating: (CommentPayloadType) => void
+  updateRating: CommentPayloadType => void
 
   @Prop()
   /**
@@ -60,7 +60,7 @@ export default class Comment extends Vue {
    * @param commentId - Comment's identifier to change rating.
    * @param delta - Delta value to change rating value.
    */
-  changeRating (commentId: number, delta: number) {
+  changeRating(commentId: number, delta: number) {
     // Uncomment next line to test typing:
     // console.log(this.comment.missingKey)
     this.updateRating({ commentId, delta })
@@ -72,7 +72,7 @@ export default class Comment extends Vue {
    *
    * @returns Pairs of class names and boolean values if they should be applied.
    */
-  get computedClasses () {
+  get computedClasses() {
     return {
       [this.$style.commentComponent]: true,
       [this.$style.commentPositive]: this.comment.rating > 0,

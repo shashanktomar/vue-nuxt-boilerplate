@@ -52,10 +52,8 @@ Here we define all files and folders that are used in this project.
 - `.dockerignore` - specifies what files should not be
   copied to the `docker` image
 
-- [`.gitlab-ci.yml`](https://docs.gitlab.com/ee/ci/yaml/) - GitLab CI
-  configuration file. It basically defines what to do with your project
-  after pushing it to the repository. Currently it is used for testing
-  and releasing a `docker` image
+- `.circleci` - CircleCi
+  configuration file for circleci
 
 - [`.vscode/`][vscode] - `vscode` IDE integration.
   We store different settings, plugins, and tasks inside this folder

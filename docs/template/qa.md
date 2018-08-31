@@ -61,18 +61,9 @@ const comments = NuxtSelector('Nuxt Comment')
 
 See `./docker/testcafe/fixtures` for more examples.
 
-## GitLab CI
+## Circle CI
 
-We also integrate QA to CI process.
-But, since all QA tests are very slow we do not force to run them on every
-commit or pull request.
-
-Instead, we offer a useful and productive way to run these tests.
-We use `when: manual` in `.gitlab-ci.yml`. This way you can manually trigger 
-QA tests to run when you actually need them.
-
-If there are some serious changes or important release run the tests.
-If this is just a minor change, do not run them to save you some time.
+TODO
 
 ## Running tests against real applications
 

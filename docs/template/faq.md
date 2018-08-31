@@ -36,12 +36,6 @@ We have struggled with `ssr` for long enough, and we don't want to go back.
 Also, `Nuxt`'s predefined build configuration suits us very well.
 Wide choice of plugins also allows solving problems faster.
 
-## Why do you use `now` for a demo project?
-
-This allows us to show how easy it is to deploy a full-featured isomorphic app.
-The main idea of this example is to demonstrate server-side rendering features.
-Both with basic client interactions.
-
 ## Why do you use vscode and not vim/sublime/emacs/webstorm?
 
 First of all, you don't have to use `vscode`. Use the editor you love.

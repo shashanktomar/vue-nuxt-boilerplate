@@ -13,7 +13,7 @@ This file is required for `gitbook.io` to build a beautiful table of contents.
 - [Linting](template/linting.md)
 - [Testing](template/testing.md)
 - [Docker](template/docker.md)
-- [GitLab CI](template/gitlab-ci.md)
+- [Circle CI](template/circleci.md)
 - [QA](template/qa.md)
 - [Production](template/production.md)
 

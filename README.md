@@ -27,7 +27,9 @@ When developing locally, we use:
 
 - [`editorconfig`](http://editorconfig.org/) plugin (**required**)
 - [`yarn`](https://yarnpkg.com) (**required**)
+- copy config/.env.tempalte file to config/.env
+- `yarn dev`
 
 ## Documentation
 
-Full documentation is available here: [`docs/`](docs).
+Run `yarn install && yarn docs:serve` to see detailed documentation
